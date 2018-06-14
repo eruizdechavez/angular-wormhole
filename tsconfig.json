@@ -1,14 +1,20 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
     "module": "commonjs",
     "target": "ES5",
+    "lib": ["es5", "es6", "dom"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "outDir": "./dist"
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
 }
